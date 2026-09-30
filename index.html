@@ -42,21 +42,27 @@
             <h2>Meu primeiro post</h2>
             <p>Sejam bem vindos ao site Espelhos da alma tarot. Aqui irei mostrar que a tarologia não é tão dificel quanto parece.</p>
             <p class="artigo-autor">Por: Stephany Kauana</p>
-            <button>🖤<span>0</span>​</button>
+            <button>🖤​<span>0</span></button>
+            <button>​🥰​<span>0</span></button>
+         </div>
         <main>
-
+            
        
         Venha aprender como desvendar a tarologia.
        
 </body>
 
 <script>
-    const botao = document.querySelector("button");
+    const botao = document.querySelector(" main button");
+    bootoes.foreach(function(botao){
     botao.addeEvenListener("click",botaoClicado);
-        function botaoClicado() {
+
+    function botaoClicado() {
          console.log("fui clicado");
          let texto = botao.querySelector("span");
          texto.textContent++;
-    }
-</script>
+
+    }    
+   });
+   </script>
 </html>
